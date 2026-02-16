@@ -1,0 +1,96 @@
+LECTURE 1 
+#oops=object oreneted programing
+
+class employee:
+    name = "Devashish "
+    language = "py"
+    salary =  1200000
+
+
+devashish  = employee()
+print(devashish.name,devashish .salary)
+
+
+
+class employee:
+    name = "ayush "    
+    language = "py"    # this is a class attribute 
+    salary =  1200000
+
+
+ayush  = employee()
+print(ayush.name, ayush .salary)
+
+
+# here the name is object attribute and the salary and language are the class attributes as they directky belong to the class
+
+
+LECTURE 2
+class employee:
+    name = "Devashish "
+    language = "py"# this is a class attribute 
+    salary =  1200000
+
+
+# devashish  = employee()
+# print(devashish.language,devashish .salary)
+
+
+ayush  = employee()        
+ayush.language = "java"        # this inshatance attributes
+
+print(ayush.language, ayush .salary)
+
+
+# here the name is object attribute and the salary and language are the class attributes as they directky belong to the class
+
+
+
+# instance attributes always take priority first rather then class attributes
+
+LECTURE 3
+# self py
+
+class employee:
+    name = "Devashish "
+    language = "py"
+    salary =  1200000
+
+    def getInfo(self):
+        print(f"the language is ,{self.language} the name is {self.name}")
+    def greet(self):
+        print("how are u devashish i hope u are fine")
+
+devashish  = employee()
+print(devashish.language,devashish .salary)
+devashish.getInfo()
+devashish.greet()
+
+
+
+# hm log ko self function ko dena partha har ek program me
+
+LECTURE 4
+# constructor.py
+class employee:
+    name = "Devashish "
+    language = "py"
+    salary =  1200000
+
+    def __init__(self):      # dunder method which is automaatically called
+         print("i think currently u are not well enough")
+
+    # def getInfo(self):
+    #     print(f"the language is ,{self.language} the name is {self.name}")
+    # def greet(self):
+    #     print("how are u devashish i hope u are fine")
+
+devashish  = employee()
+print(devashish.language,devashish .salary)
+# devashish.getInfo()
+# devashish.greet()
+
+
+
+# hm log ko self function ko dena partha har ek program me
+
